@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+.drag-drop {
+    width: 100%;
+    .flex {
+        // display: flex;
+        justify-content: flex-start;
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.9);
+        
+        .container {
+            flex: 1;
+            width: 200px;
+            height: 500px;
+            border: 1px solid blue;
+            margin: 3px;
+        }
+        .container:not(:last-child) {
+        margin-right: 8px;
+        }
+    
+    
+        .vamp {
+            background: rgba(106, 178, 181, 0.9);
+            list-style: none;
+            padding: 8px;
+            color: #222;
+            margin: 5px;
+            // cursor: grab;
+          }
+          
+          .vamp:not(:last-child) {
+            border-bottom: 1px solid #777;
+          }
+          .container-grab {
+              cursor: grab;
+          }
+          .effect7:hover {
+              box-shadow: 0 3px 2px -2px red;
+              border: 1px solid blue;
+          }
+    }
+
+    
+}
